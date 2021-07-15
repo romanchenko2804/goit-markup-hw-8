@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -17,14 +19,16 @@
     <header class="header">
         <nav class="header-nav">
             <a class="logo-link" href="/"><span class="logo-text">Web</span>Studio</a>
-            <ul class="nav-list">
+            <ul class="nav-list list">
                 <li class="list-items"><a class="nav-link" href="/">Студия</a></li>
-                <li class="list-items"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                <li class="list-items">
+                    <a class="nav-link" href="./portfolio.html">Портфолио</a>
+                </li>
                 <li class="list-items"><a class="nav-link" href="/">Контакты</a></li>
             </ul>
         </nav>
 
-        <ul class="header-list">
+        <ul class="header-list list">
             <li class="list-items">
                 <a class="header-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
@@ -37,38 +41,38 @@
     <!-- основной контент -->
     <main>
         <!-- герой -->
-        <section>
-            <h1>Эффективные решения для вашего бизнеса</h1>
-            <button type="button">Заказать услугу</button>
+        <section class="hero-section">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button type="button" class="hero-button">Заказать услугу</button>
         </section>
         <!-- особенности -->
-        <section>
-            <h2>Преимущества</h2>
-            <ul>
+        <section class="benefits-section">
+            <h2 class="benefits">Преимущества</h2>
+            <ul class="benefits-list list">
                 <li>
-                    <h3>Внимание к деталям</h3>
-                    <p>
+                    <h3 class="benefits-title">Внимание к деталям</h3>
+                    <p class="benefits-paragraph">
                         Идейные соображения, а также начало повседневной работы по
                         формированию позиции.
                     </p>
                 </li>
                 <li>
-                    <h3>Пунктуальность</h3>
-                    <p>
+                    <h3 class="benefits-title">Пунктуальность</h3>
+                    <p class="benefits-paragraph">
                         Задача организации, в особенности же рамки и место обучения кадров
                         влечет за собой.
                     </p>
                 </li>
                 <li>
-                    <h3>Планирование</h3>
-                    <p>
+                    <h3 class="benefits-title">Планирование</h3>
+                    <p class="benefits-paragraph">
                         Равным образом консультация с широким активом в значительной
                         степени обуславливает.
                     </p>
                 </li>
                 <li>
-                    <h3>Современные технологии</h3>
-                    <p>
+                    <h3 class="benefits-title">Современные технологии</h3>
+                    <p class="benefits-paragraph">
                         Значимость этих проблем настолько очевидна, что реализация
                         плановых заданий.
                     </p>
@@ -76,37 +80,39 @@
             </ul>
         </section>
         <!-- Чем мы занимаемся -->
-        <section>
-            <h2>Чем мы занимаемся</h2>
+        <section class="work-section">
+            <h2 class="work-title">Чем мы занимаемся</h2>
             <img src="./images/wwd1_squoosh.jpg" alt="Рабочее место разработчика" width="370" height="294" />
             <img src="./images/wwd2_squoosh.jpg" alt="Гибкая разметка" width="370" height="294" />
             <img src="./images/wwd3_squoosh.jpg" alt="КЗС — аддитивная цветовая модель" width="370" height="294" />
         </section>
         <!-- Наша команда -->
-        <section>
-            <h2>Наша команда</h2>
-            <ul>
+        <section class="team-section">
+            <h2 class="team-title">Наша команда</h2>
+            <ul class="team-list list">
                 <li>
-                    <img src="./images/product_designer_squoosh.jpg" alt="Дизайнер продукта" width="270" height="260" />
-                    <h3>Игорь Демьяненко</h3>
-                    <p>Product Designer</p>
+                    <img src="./images/product_designer_squoosh.jpg" class="card-img" alt="Дизайнер продукта"
+                        width="270" height="260" />
+                    <h3 class="card-title">Игорь Демьяненко</h3>
+                    <p class="card-paragraph">Product Designer</p>
                 </li>
                 <li>
-                    <img src="./images/frontend_developer_squoosh.jpg" alt="Фронтенд разработчик" width="270"
+                    <img src="./images/frontend_developer_squoosh.jpg" class="card-img" alt="Фронтенд разработчик"
+                        width="270" height="260" />
+                    <h3 class="card-title">Ольга Репина</h3>
+                    <p class="card-paragraph">Frontend Developer</p>
+                </li>
+                <li>
+                    <img src="./images/marketing_squoosh.jpg" class="card-img" alt="Маркетинг" width="270"
                         height="260" />
-                    <h3>Ольга Репина</h3>
-                    <p>Frontend Developer</p>
+                    <h3 class="card-title">Николай Тарасов</h3>
+                    <p class="card-paragraph">Marketing</p>
                 </li>
                 <li>
-                    <img src="./images/marketing_squoosh.jpg" alt="Маркетинг" width="270" height="260" />
-                    <h3>Николай Тарасов</h3>
-                    <p>Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/ui_designer_squoosh.jpg" alt="Дизайнер пользовательского интерфейса" width="270"
-                        height="260" />
-                    <h3>Михаил Ермаков</h3>
-                    <p>UI Designer</p>
+                    <img src="./images/ui_designer_squoosh.jpg" class="card-img"
+                        alt="Дизайнер пользовательского интерфейса" width="270" height="260" />
+                    <h3 class="card-title">Михаил Ермаков</h3>
+                    <p class="card-paragraph">UI Designer</p>
                 </li>
             </ul>
         </section>
@@ -114,7 +120,7 @@
 
     <!-- футер -->
     <footer class="footer">
-        <a class="logo-link" href="/"><span class="logo-text">Web</span>tudio</a>
+        <a class="logo-link" href="/"><span class="logo-text">Web</span>Studio</a>
         <address class="footer-address">
             <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
             <a class="address-link" href="mailto:info@example.com">info@example.com</a>
