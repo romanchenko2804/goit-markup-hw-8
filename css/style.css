@@ -1,25 +1,30 @@
 /* палитра:
 - основной цвет текста  #212121;
 - вторичный цвет текста #757575;
-- белый #FFFFFF;
+- белый #FFFFFF; - (h1, .hero-button, цвет второй части текста лого в футере, фон от хэдэра до секции "Наша команда" , строка адреса, телефон и имэйл в футере с 60% прозрачностью - rgba(255, 255, 255, 0.6); )
 - акцент #2196F3;
-- осноовной цвет фона #E5E5E5;
+- фон секции "Наша команда" и кнопок в фильтре на странице "Портфолио" #F5F4FA; 
 - фон футера #2F303A;
 */
+
 :root {
     --primary-text-color: #212121;
     --secondary-text-color: #757575;
     --accent-color: #2196F3;
-    --primary-bg-color: #E5E5E5;
+    --white-color: #ffffff;
+    --white-color-opacity-60: rgba(255, 255, 255, 0.6);
 }
 
 body {
     font-family: 'Roboto', 'Raleway', sans-serif;
+
     color: var(--primary-text-color);
-    background-color: var(--primary-bg-color);
+    background-color: var(--white-color);
 }
 
-.header a, .footer a{
+    /* HEADER */
+
+a {
     text-decoration: none;
 }
 
@@ -33,6 +38,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+
     color: #000000;
 }
 
@@ -45,6 +51,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     color: var(--primary-text-color);
 }
 
@@ -53,11 +60,16 @@ body {
     color: var(--accent-color);
 }
 
+.nav-list .nav-link.current {
+    color: var(--accent-color);
+}
+
 .header-link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
     color: var(--secondary-text-color);
 }
 
@@ -65,4 +77,146 @@ body {
 .header-link:focus {
     color: var(--accent-color);
 }
+
+    /* MAIN CONTENT - index.html */
+
+/* hero */
+
+.hero-section {
+    background-color: #2F303A;
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.37;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: var(--white-color);
+}
+
+.hero-button {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+
+    color: var(--white-color);
+    background-color: var(--accent-color);
+}
+
+/* benefits */
+
+.benefits {
+    display: none;
+}
+
+.benefits-title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+}
+
+.benefits-paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
+
+/* WHAT WE DO */
+
+.work-title  {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+/* OUR TEAM */
+
+.team-section {
+    background-color: #F5F4FA;
+}
+
+.team-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+/* добавил к "карте" ширину,высоту и внешний отступ для наглядности  */
+.team-member {
+    width: 270px;
+    height: 368px;
+    margin-bottom: 20px;
+    background-color: var(--white-color);
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.03em;
+
+    color: var(--primary-text-color);
+}
+
+.profession {
+    font-size: 16px;
+    line-height: 1.1875;
+    letter-spacing: 0.03em;
+
+    color: var(--secondary-text-color);
+}
+
+    /* FOOTER */
+
+.footer {
+    background-color: #2F303A;
+}
+
+.footer .logo-link {
+    color: #ffffff;
+}
+
+.address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--white-color);
+}
+
+.address-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: var(--white-color-opacity-60);
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: var(--accent-color);
+}
+
+
+    /* MAIN CONTENT - portfolio.html */
+
+/* BUTTONS LIST */
 
