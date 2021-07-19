@@ -16,8 +16,9 @@
 }
 
 body {
-  font-family: 'Roboto', 'Raleway', sans-serif;
-
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+  
   color: var(--primary-text-color);
   background-color: var(--white-color);
 }
@@ -26,6 +27,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--primary-text-color);
 }
 
 .list {
@@ -37,8 +39,7 @@ a {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-
+  
   color: #000000;
 }
 
@@ -51,8 +52,6 @@ a {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  color: var(--primary-text-color);
 }
 
 .nav-link:hover,
@@ -105,6 +104,15 @@ a {
 
   color: var(--white-color);
   background-color: var(--accent-color);
+
+  cursor: pointer;
+}
+
+/* продублировал цвета для :hover и :focus */
+.hero-button:hover,
+.hero-button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 /* benefits */
@@ -114,32 +122,23 @@ a {
 }
 
 .benefits-title {
-  font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-
-  color: var(--primary-text-color);
 }
 
 .benefits-paragraph {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-
+  
   color: var(--secondary-text-color);
 }
 
 /* WHAT WE DO */
 
 .work-title {
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
 }
 
 /* OUR TEAM */
@@ -149,36 +148,28 @@ a {
 }
 
 .team-title {
-  font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
 }
 
 /* добавил к "карте" ширину,высоту и внешний отступ для наглядности  */
-.team-member {
+/* .team-member {
   width: 270px;
   height: 368px;
   margin-bottom: 20px;
   background-color: var(--white-color);
-}
+} */
 
 .card-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.1875;
-  letter-spacing: 0.03em;
-
-  color: var(--primary-text-color);
 }
 
 .profession {
   font-size: 16px;
   line-height: 1.1875;
-  letter-spacing: 0.03em;
-
+  
   color: var(--secondary-text-color);
 }
 
@@ -196,8 +187,7 @@ a {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-
+  
   color: var(--white-color);
 }
 
@@ -205,14 +195,13 @@ a {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-
+  
   color: var(--white-color-opacity-60);
 }
 
 .address-link:hover,
 .address-link:focus {
-  color: var(--accent-color);
+  color: var(--white-color);
 }
 
 /* MAIN CONTENT - portfolio.html */
@@ -224,9 +213,14 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
-  letter-spacing: 0.03em;
-
+  
   color: var(--primary-text-color);
+  background-color: #F5F4FA;
+}
+
+.button.all-items {
+  color: var(--white-color);
+  background-color: var(--accent-color);
 }
 
 .button:hover,
@@ -240,18 +234,14 @@ a {
 /* PORJECTS LIST */
 
 .project-title {
-  font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-
-  color: var(--primary-text-color);
 }
 
 .project-type {
   font-size: 16px;
   line-height: 1.875;
-  letter-spacing: 0.03em;
-
+  
   color: var(--secondary-text-color);
 }
