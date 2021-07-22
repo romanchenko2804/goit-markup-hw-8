@@ -20,7 +20,6 @@
 
 
 body {
- 
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
 
@@ -68,6 +67,15 @@ a {
 /* HEADER */
 
 .header-content {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-portfollio {
+  width: 1600px;
+  padding-right: 215px;
+  padding-left: 215px;
+  margin-bottom: 94px; 
+
   border-bottom: 1px solid #ececec;
 }
 
@@ -387,9 +395,28 @@ h2.benefits {
 
 /* MAIN CONTENT - portfolio.html */
 
+.main-content {
+  margin-bottom: 94px;
+}
+
 /* BUTTONS LIST */
 
+.buttons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button {
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -397,6 +424,8 @@ h2.benefits {
 
   color: var(--primary-text-color);
   background-color: var(--section-and-btn-bg-color);
+  border-radius: 4px;
+  border: none;
 }
 
 .button.all-items {
@@ -414,13 +443,40 @@ h2.benefits {
 
 /* PORJECTS LIST */
 
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-bottom: 30px;
+
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.project-card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.project-img {
+  margin-bottom: 20px;
+}
+
 .project-title {
+  margin-bottom: 4px;
+  padding-left: 24px;
+
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .project-type {
+  padding-bottom: 20px;
+  padding-left: 24px;
+
   font-size: 16px;
   line-height: 1.875;
 
