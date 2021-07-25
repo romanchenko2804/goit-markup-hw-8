@@ -18,7 +18,6 @@
   --footer-bg-color: #2f303a;
 }
 
-
 body {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.03em;
@@ -183,7 +182,6 @@ header .container,
   background-color: var(--footer-bg-color);
 }
 
-
 .hero-title {
   max-width: 696px;
   margin-right: auto;
@@ -195,7 +193,6 @@ header .container,
   line-height: 1.37;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  
 
   color: var(--white-color);
 }
@@ -221,7 +218,6 @@ header .container,
   color: var(--white-color);
   background-color: #188ce8;
 }
-
 
 /* benefits */
 
@@ -314,7 +310,6 @@ header .container,
 
   text-align: center;
 }
-
 
 .card-title {
   margin-bottom: 10px;
@@ -435,10 +430,10 @@ header .container,
   margin-right: 30px;
   margin-bottom: 30px;
 
-  background: #FFFFFF;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-left: 1px solid #EEEEEE;
+  background: #ffffff;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 /* ниже альтернативный вариант */
