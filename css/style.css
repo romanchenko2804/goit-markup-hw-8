@@ -264,11 +264,11 @@ header .container,
   text-align: center;
 }
 
-.images-box {
+.images-list {
   display: flex;
 }
 
-.images-box > img:not(:last-child) {
+.image-items:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -305,8 +305,8 @@ header .container,
 }
 
 .card-info {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   text-align: center;
 }
@@ -328,12 +328,14 @@ header .container,
 /* FOOTER */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-bg-color);
 }
 
 .footer .logo-link {
   display: block;
-  padding-top: 60px;
   margin-bottom: 20px;
 
   color: var(--white-color);
@@ -342,7 +344,6 @@ header .container,
 .footer-address {
   display: flex;
   flex-direction: column;
-  padding-bottom: 60px;
 }
 
 .address {
@@ -431,9 +432,6 @@ header .container,
   margin-bottom: 30px;
 
   background: #ffffff;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 /* ниже альтернативный вариант */
@@ -450,6 +448,10 @@ header .container,
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
+
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .project-title {
