@@ -18,6 +18,7 @@
   --footer-bg-color: #2f303a;
   --hero-bg-color: #C4C4C4;
   --icons-primary-color: #AFB1B8;
+  --white-color-opacity-10: rgba(255, 255, 255, 0.1);
 }
 
 body {
@@ -35,7 +36,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+b {
   margin: 0;
   padding: 0;
 }
@@ -62,6 +64,10 @@ address {
 
 .list {
   list-style-type: none;
+}
+
+.icon {
+  fill: currentColor;
 }
 
 .visually-hidden {
@@ -179,16 +185,12 @@ header .container,
   width: 16px;
   height: 12px;
   margin-right: 10px;
-
-  fill: currentColor;
 }
 
 .icon-phone {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-
-  fill: currentColor;
 }
 
 
@@ -283,8 +285,6 @@ header .container,
 .icon-item {
   width: 70px;
   height: 70px;
-
-  fill: var(--primary-text-color);
 }
 
 .benefits-title {
@@ -407,13 +407,11 @@ header .container,
 .social-icon {
   width: 20px;
   height: 20px;
-
-  fill: currentColor;
 }
 
 /* regular customers */
 
-.customers-header {
+.customers-title {
   margin-bottom: 50px;
 
   font-size: 36px;
@@ -426,19 +424,26 @@ header .container,
 .customers-list {
   display: flex;
   justify-content: space-between;
-
 }
 
 .customers-item {
   width: 170px;
   height: 92px;
-   padding: 16px 32px;
 
   border: 1px solid #AFB1B8;
   border-radius: 4px;
 }
 
+.customers-item:hover {
+  border: 1px solid var(--accent-color);
+}
+
 .customers-link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
   color: var(--icons-primary-color);
 }
 
@@ -446,16 +451,15 @@ header .container,
   color: var(--accent-color);
 }
 
-.company {
+.icon-company {
   width: 106px;
   height: 60px;
-
-  fill: currentColor;
 }
 
 /* FOOTER */
 
 .footer {
+  align-items: baseline;
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -463,6 +467,15 @@ header .container,
   padding-bottom: 60px;
 
   background-color: var(--footer-bg-color);
+}
+
+.footer>.container {
+  display: flex;
+  align-items: baseline;
+}
+
+.address-box {
+  margin-right: 70px;
 }
 
 .footer .logo-link {
@@ -501,6 +514,48 @@ header .container,
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+.join-title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  
+  color: var(--white-color);
+
+  text-transform: uppercase;
+}
+
+.join-list {
+  display: flex;
+}
+
+.join-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  border-radius: 50%;
+
+  color: var(--white-color);
+  background-color: var(--white-color-opacity-10);
+}
+
+.join-link:hover {
+  background-color: var(--accent-color);
+}
+
+.join-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* MAIN CONTENT - portfolio.html */
@@ -563,6 +618,12 @@ header .container,
   margin-bottom: 30px;
 
   background: #ffffff;
+}
+
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ниже альтернативный вариант */
