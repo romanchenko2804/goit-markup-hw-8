@@ -447,7 +447,7 @@
             <b class="subscribe-title">Подпишитесь на рассылку</b>
             <div class="subscribe-form-field">
               <input type="email" name="email" class="subscribe-input" placeholder="E-mail">
-              <button type="button" class="subscribe-btn">Подписаться
+              <button type="submit" class="subscribe-btn">Подписаться
                 <svg class="subscribe-icon" width="24" height="24">
                   <use href="./images/icons.svg#paper-plane"></use>
                 </svg>
@@ -497,16 +497,16 @@
           </div>
 
           <div class="form-field">
-            <textarea name="comment" id="comment" rows="10" placeholder="Введите текст"></textarea>
+            <textarea name="comment" id="comment" rows="10" placeholder="Введите текст" class="textarea"></textarea>
             <label for="comment" class="form-label">Комментарий</label>
           </div>
 
-          <div class="check-field">
-            <input type="checkbox" name="agreement" id="agreement">
-            <label for="agreement" class="agree-label">Соглашаюсь с рассылкой и принимаю <a href="./"
-                class="agree-link">Условия договора</a>
+            <label class="check-label">
+              <input type="checkbox" name="agreement" class="check-input">
+              <span class="check-icon"></span>
+              Соглашаюсь с рассылкой и принимаю 
+              <a href="./" class="check-link">Условия договора</a>
             </label>
-          </div>
 
           <button type="submit" class="modal-form-btn">Отправить</button>
 
