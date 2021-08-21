@@ -1,0 +1,49 @@
+.join-box {
+    margin-right: 93px;
+
+    &__title {
+        display: inline-block;
+        margin-bottom: 20px;
+
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+
+        color: $whiteColor;
+
+        text-transform: uppercase;
+    }
+
+    &__list {
+        @extend %list;
+    }
+}
+
+.join-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.join-item__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+
+    color: $whiteColor;
+    background-color: $whiteColorOpacity10;
+
+    transition: background-color $durationTimingFunction;
+
+    &:hover,
+    &:focus {
+        background-color: $accentColor;
+    }
+}
+
+.join-item__icon {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,42 @@
+.contacts {
+    @extend %list;
+
+    &__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
+.contacts__link {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    color: $secondaryTextColor;
+
+    transition: color $durationTimingFunction;
+    
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
+}
+
+.contacts__icon {
+    &-envelope {
+        width: 16px;
+        height: 12px;
+        margin-right: 10px;
+    }
+
+    &-phone {
+        width: 10px;
+        height: 16px;
+        margin-right: 10px;
+    }
+}

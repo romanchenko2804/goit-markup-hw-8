@@ -1,0 +1,10 @@
+.page-header {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid $headerBorderColor;
+}
+
+.page-header__container {
+    @extend %centeredFlex;
+}
