@@ -1,9 +1,9 @@
 .team-section {
     background-color: $sectionBgColor;
+}
 
-    &__list {
-        @extend %list;
-    }
+.team-section__list {
+    @extend %list;
 }
 
 .team-card {
@@ -15,37 +15,37 @@
     border-radius: 0px 0px 4px 4px;
     background-color: $whiteColor;
 
-    &__info {
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-        text-align: center;
-    }
-
-    &__title {
-        margin-bottom: 10px;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.19;
-    }
-
-    &__text {
-        margin-bottom: 16px;
-
-        font-size: 16px;
-        line-height: 1.19;
-
-        color: $secondaryTextColor;
-    }
-
-    &__list {
-        display: flex;
-        justify-content: center;
+    &:not(:last-child) {
+        margin-right: 30px;
     }
 }
 
-.team-card:not(:last-child) {
-    margin-right: 30px;
+.team-card__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    text-align: center;
+}
+
+.team-card__title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team-card__text {
+    margin-bottom: 16px;
+
+    font-size: 16px;
+    line-height: 1.19;
+
+    color: $secondaryTextColor;
+}
+
+.team-card__list {
+    display: flex;
+    justify-content: center;
 }
 
 .social-box:not(:last-child) {
@@ -63,8 +63,7 @@
 
     border-radius: 50%;
 
-    transition: color $durationTimingFunction,
-        background-color $durationTimingFunction;
+    transition: color $durationTimingFunction, background-color $durationTimingFunction;
 
     &:hover,
     &:focus {

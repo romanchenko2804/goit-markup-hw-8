@@ -2,10 +2,6 @@
     @extend %list;
 }
 
-.clients-box:not(:last-child) {
-    margin-right: 30px;
-}
-
 .clients-box {
     width: 170px;
     height: 92px;
@@ -20,25 +16,30 @@
         border: 1px solid $accentColor;
     }
 
-    &__link {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 170px;
-        height: 92px;
-
-        color: $iconsPrimaryColor;
-
-        transition: color $durationTimingFunction;
-    }
-
-    &__icon {
-        width: 106px;
-        height: 60px;
+    &:not(:last-child) {
+        margin-right: 30px;
     }
 }
 
-.clients-box__link:hover,
-.clients-box__link:focus {
-    color: $accentColor;
+.clients-box__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+
+    color: $iconsPrimaryColor;
+
+    transition: color $durationTimingFunction;
+
+    &:hover,
+    &:focus {
+        color: $accentColor;
+    }
 }
+
+.clients-box__icon {
+    width: 106px;
+    height: 60px;
+}
+

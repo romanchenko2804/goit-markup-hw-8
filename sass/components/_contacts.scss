@@ -27,16 +27,14 @@
     }
 }
 
-.contacts__icon {
-    &-envelope {
-        width: 16px;
-        height: 12px;
-        margin-right: 10px;
-    }
+.contacts__icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
 
-    &-phone {
-        width: 10px;
-        height: 16px;
-        margin-right: 10px;
-    }
+.contacts__icon-phone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
 }

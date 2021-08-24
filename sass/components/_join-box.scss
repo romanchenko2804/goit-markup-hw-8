@@ -1,22 +1,22 @@
 .join-box {
     margin-right: 93px;
+}
 
-    &__title {
-        display: inline-block;
-        margin-bottom: 20px;
+.join-box__title {
+    display: inline-block;
+    margin-bottom: 20px;
 
-        font-size: 14px;
-        line-height: 1.15;
-        letter-spacing: 0.03em;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
 
-        color: $whiteColor;
+    color: $whiteColor;
 
-        text-transform: uppercase;
-    }
+    text-transform: uppercase;
+}
 
-    &__list {
-        @extend %list;
-    }
+.join-box__list {
+    @extend %list;
 }
 
 .join-item:not(:last-child) {

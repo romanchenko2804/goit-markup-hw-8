@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $primaryFontFamily;
     letter-spacing: 0.03em;
 
     color: $primaryTextColor;
@@ -33,7 +33,7 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: $primaryTextColor;
 }
 
 address {

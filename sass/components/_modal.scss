@@ -9,12 +9,12 @@
     opacity: 1;
 
     transition: opacity $durationTimingFunction, visibility $durationTimingFunction;
+}
 
-    &.is-hidden {
-        visibility: hidden;
-        opacity: 0;
-        pointer-events: none;
-    }
+.backdrop.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .modal {
@@ -32,35 +32,35 @@
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform $durationTimingFunction;
-
-    .backdrop.is-hidden & {
-        transform: translate(-50%, -50%) scale(0.5);
-    }
-
-    &__btn {
-        position: absolute;
-        top: 8px;
-        right: 8px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 30px;
-        height: 30px;
-
-        background: $whiteColor;
-        border: 1px solid $blackColorOpacity10;
-        border-radius: 50%;
-
-        cursor: pointer;
-
-        fill: $blackColor;
-
-        transition: fill $durationTimingFunction;
-    }
 }
 
-.modal__btn:hover,
-.modal__btn:focus {
-    fill: $accentColor;
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.5);
+}
+
+.modal__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+
+    background: $whiteColor;
+    border: 1px solid $blackColorOpacity10;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    fill: $blackColor;
+
+    transition: fill $durationTimingFunction;
+
+    &:hover,
+    &:focus {
+        fill: $accentColor;
+    }
 }

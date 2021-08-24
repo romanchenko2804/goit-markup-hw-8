@@ -29,11 +29,6 @@
         background-color $durationTimingFunction,
         box-shadow $durationTimingFunction;
 
-    &.all-items {
-        color: $whiteColor;
-        background-color: $accentColor;
-    }
-
     &:hover,
     &:focus {
         color: $whiteColor;
@@ -43,4 +38,9 @@
 
         cursor: pointer;
     }
+}
+
+.buttons--look.all-items {
+    color: $whiteColor;
+    background-color: $accentColor;
 }
