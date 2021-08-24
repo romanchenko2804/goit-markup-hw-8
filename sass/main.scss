@@ -1,21 +1,34 @@
+// utils
 @import "./utils/variables";
 @import "./utils/placeholders";
+
+// base
 @import "./base/fonts";
 @import "./base/common";
+
+// header
 @import "./components/page-header";
 @import "./components/logo";
 @import "./components/nav-menu";
 @import "./components/contacts";
+
+// main
 @import "./components/hero-section";
 @import "./components/benefits-section";
 @import "./components/work-section";
 @import "./components/team-section";
 @import "./components/clients-section";
+
+// footer
 @import "./components/page-footer";
 @import "./components/join-box";
 @import "./components/subscribe-form";
+
+// portfolio page
 @import "./components/buttons";
 @import "./components/projects";
+
+// modal
 @import "./components/modal";
 @import "./components/modal-form";
 
