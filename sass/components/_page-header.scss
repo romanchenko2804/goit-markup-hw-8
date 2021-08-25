@@ -1,8 +1,7 @@
 .page-header {
-    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid $headerBorderColor;
+    border-bottom: 1px solid $headerBorderColor; // max-width: 1600px; - нижний бордер хедера будет тянутся не на всю ширину страницы
 }
 
 .page-header__container {
