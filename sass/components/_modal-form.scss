@@ -40,7 +40,7 @@
 
 .form-field__label {
     position: absolute;
-    top: -17px;
+    top: -18px;
     left: 0;
 
 
@@ -146,12 +146,25 @@
     margin-right: 7px;
 
     border: 2px solid $primaryTextColor;
-    border-radius: 4px;
+    border-radius: 2px;
 }
 
 .check-label__link {
+    position: relative;
     color: $accentColor;
-    text-decoration: underline;
+}
+
+.check-label__link::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 1px;
+    display: block;
+    
+    width: 127px;
+    height: 1px;
+
+    background-color: $accentColor;
 }
 
 .check-label__input:checked+.check-label__icon {
