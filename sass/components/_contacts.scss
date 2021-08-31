@@ -1,9 +1,5 @@
-.contacts {
-    @extend %list;
-
-    &__item:not(:last-child) {
-        margin-right: 30px;
-    }
+.contacts__item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .contacts__link {

@@ -15,10 +15,6 @@
     text-transform: uppercase;
 }
 
-.join-box__list {
-    @extend %list;
-}
-
 .join-item:not(:last-child) {
     margin-right: 10px;
 }

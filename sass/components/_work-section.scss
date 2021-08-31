@@ -1,5 +1,7 @@
-.work-section__list {
-    @extend %list;
+.work-section {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .work-section__img {
