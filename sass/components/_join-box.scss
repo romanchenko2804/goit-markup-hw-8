@@ -1,18 +1,22 @@
 .join-box {
-    margin-right: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-right: 93px;
+    }
 }
 
 .join-box__title {
-    display: inline-block;
-    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        margin-bottom: 20px;
 
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
+        font-size: 14px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
 
-    color: $whiteColor;
+        color: $whiteColor;
 
-    text-transform: uppercase;
+        text-transform: uppercase;
+    }
 }
 
 .join-item:not(:last-child) {

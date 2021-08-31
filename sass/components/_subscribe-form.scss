@@ -1,38 +1,46 @@
 .subscribe-form {
-    display: flex;
-    flex-direction: column;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 .subscribe-form__title {
-    margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 20px;
 
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
 
-    color: $whiteColor;
+        color: $whiteColor;
 
-    text-transform: uppercase;
+        text-transform: uppercase;
+    }
+    
 }
 
 .subscribe-form__input {
-    padding: 14px 16px;
-    width: 358px;
-    margin-right: 12px;
+    @media screen and (min-width: 1200px) {
+        padding: 14px 16px;
+        width: 358px;
+        margin-right: 12px;
 
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.03em;
-    color: $whiteColor;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: $whiteColor;
 
-    background-color: $footerBgColor;
-    border: 1px solid $inputBorderSubscribeForm;
-    border-radius: 4px;
-    outline: none;
+        background-color: $footerBgColor;
+        border: 1px solid $inputBorderSubscribeForm;
+        border-radius: 4px;
+        outline: none;
 
-    transition: border-color $durationTimingFunction;
+        transition: border-color $durationTimingFunction;
 
-    cursor: pointer;
+        cursor: pointer;
+    }
 }
 
 .subscribe-form__btn {
