@@ -1,35 +1,85 @@
-.nav-menu__logo {
-    margin-right: 93px;
+.mobile__nav-menu {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        //    display: flex;
+        justify-content: space-between;
+    }
 }
 
 .nav-menu {
-    @extend %centeredFlex;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 302px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 84px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 0;
+    }
 }
 
-.nav-menu__item:not(:last-child) {
-    margin-right: 50px;
+.nav-menu__list {
+    @media screen and (max-width: 767px) {
+        margin-top: 48px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
+
+    @media screen and (min-width: 1200px) {}
+
+}
+
+.nav-menu__item {
+    @media screen and (max-width: 767px) {
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 768px) {}
+
+    @media screen and (min-width: 1200px) {}
+
+}
+
+.nav-menu__item {
+    @media screen and (min-width: 768px) {
+        &:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
 }
 
 .nav-menu__link {
-    position: relative;
+    @media screen and (min-width: 768px) {
+        position: relative;
 
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
+        display: block;
+        padding-top: 32px;
+        padding-bottom: 32px;
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-
-    transition: color $durationTimingFunction;
-
-    &:hover,
-    &:focus {
-        color: $accentColor;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
     }
+}
 
-    &::after {
+.nav-menu__link::after {
+    @media screen and (min-width: 768px) {
         content: '';
 
         position: absolute;
@@ -48,19 +98,24 @@
         transition: transform $durationTimingFunction;
     }
 
-    &:hover::after,
-    &:focus::after {
+}
+
+.nav-menu__link:hover::after,
+.nav-menu__link:focus::after {
+    @media screen and (min-width: 768px) {
         /* opacity: 1; */
         transform: scale(1);
     }
+
+}
+
+.nav-menu__link.current::after {
+    @media screen and (min-width: 768px) {
+        transform: scale(1);
+    }
+
 }
 
 .nav-menu__link.current {
     color: $accentColor;
 }
-
-.nav-menu__link.current::after {
-    transform: scale(1);
-}
-
-
