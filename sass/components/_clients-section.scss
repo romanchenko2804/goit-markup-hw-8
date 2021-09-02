@@ -1,8 +1,11 @@
 .clients-section__list {
     @media screen and (min-width: 480px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
+        // display: grid;
+        // grid-template-columns: repeat(2, 1fr);
+        // gap: 30px;
+        display: flex;
+        flex-wrap: wrap;
+
 
     @media screen and (min-width: 768px) {
         display: grid;
@@ -28,8 +31,9 @@
     transition: border $durationTimingFunction;
 
     @media screen and (max-width: 767px) {
-        width: 210px;
-        height: 92px;
+        max-width: 210px;
+        // height: 92px;
+        margin-bottom: 30px;
     }
 
     @media screen and (min-width: 768px) {
@@ -46,6 +50,10 @@
     &:focus {
         border: 1px solid $accentColor;
     }
+}
+
+.clients-box:nth-child(2n+1) {
+    margin-right: 30px;
 }
 
 .clients-box__link {

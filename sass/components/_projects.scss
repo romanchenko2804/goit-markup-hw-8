@@ -14,7 +14,7 @@
 
 .card {
     @media screen and (max-width: 767px) {
-        width: 450px;
+        max-width: 450px;
         margin-bottom: 30px;
     }
 
@@ -66,8 +66,8 @@
 .card__overlay {
     @media screen and (max-width: 767px) {
         position: relative;
-        width: 450px;
-        height: 294px;
+        max-width: 354px;
+        max-height: 294px;
 
         overflow: hidden;
     }
@@ -108,6 +108,10 @@
 
     transform: translateY(100%);
     transition: transform $durationTimingFunction;
+
+    @media screen and (min-width: 768px) {
+        
+    }
 }
 
 .card__link:hover .card__overlay-text,
@@ -131,9 +135,14 @@
 
 .card-info__title {
     margin-bottom: 4px;
+
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    // @media screen and (min-width: 768px) {
+    //     margin-top: -63px;
+    // }
 }
 
 .card-info__type {

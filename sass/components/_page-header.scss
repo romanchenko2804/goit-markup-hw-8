@@ -93,7 +93,7 @@
 
         background-color: $whiteColor;
 
-        transform: translateX(100%);
+        transform: translateY(-100%);
         transition: transform $durationTimingFunction;
     }    
 }

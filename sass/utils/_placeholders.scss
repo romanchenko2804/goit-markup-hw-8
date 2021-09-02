@@ -5,7 +5,15 @@
 }
 
 %mainTitle {
-    @media screen and (max-width: 767px), (min-width:768px) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+
+        font-size: 28px;
+        line-height: 1.17;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
         margin-bottom: 30px;
 
         font-size: 28px;

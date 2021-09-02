@@ -162,7 +162,7 @@
 .subscribe-form__title {
     @media screen and (max-width: 767px),
     (min-width: 768px) {
-      font-size: 14px;
+    font-size: 14px;
     line-height: 1.14;
     text-align: center;
     text-transform: uppercase;
@@ -186,7 +186,7 @@
     (min-width: 768px) {
         padding: 15px 16px;
         margin-bottom: 20px;
-        width: 450px;
+        max-width: 450px;
 
         font-size: 16px;
         line-height: 1.25;
