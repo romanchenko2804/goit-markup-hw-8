@@ -398,6 +398,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -2114,7 +2116,7 @@ address {
   .card__overlay {
     position: relative;
     max-width: 450px;
-    max-height: 294px;
+    height: 294px;
     overflow: hidden;
   }
 }

@@ -67,8 +67,8 @@
     @media screen and (max-width: 767px) {
         position: relative;
         max-width: 450px;
-        max-height: 294px;
-
+        height: 294px;
+        
         overflow: hidden;
     }
 
@@ -88,6 +88,13 @@
         overflow: hidden;
     }
 }
+
+// .card__overlay>img {
+//     display: block;
+//     width: 100%;
+//     height: auto;
+//     object-fit: cover;
+// }
 
 .card__overlay-text {
     position: absolute;
