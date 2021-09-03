@@ -1,17 +1,29 @@
 .modal-form {
-    margin-left: 32px;
-    margin-right: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .modal-form__title {
-    margin-top: 34px;
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px),
+    (min-width: 768px) {
+        margin-top: 40px;
 
-    font-size: 20px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 
-    color: $blackColor;
+    @media screen and (min-width: 1200px) {
+        margin-top: 34px;
+        margin-bottom: 30px;
+
+        font-size: 20px;
+        line-height: 1.15;
+        letter-spacing: 0.03em;
+    }
+
+    color: $primaryTextColor;
 }
 
 .form-field {
@@ -107,16 +119,29 @@
 // CHECK 
 
 .check-label {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    @media screen and (max-width: 767px), (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
 
-    font-size: 14px;
-    line-height: 1.71;
+        font-size: 12px;
+        line-height: 1.1666;
+        letter-spacing: 0.03em;
+    }
 
-    letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
 
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+
+    }
+    
     color: $secondaryTextColor;
 
     cursor: pointer;
@@ -139,11 +164,17 @@
 }
 
 .check-label__icon {
+    @media screen and (max-width: 767px), (min-width: 768px) {
+        margin-right: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 12px;
+        margin-right: 8px;
+    }
     display: inline-block;
     width: 16px;
     height: 15px;
-    margin-left: 12px;
-    margin-right: 7px;
 
     border: 2px solid $primaryTextColor;
     border-radius: 2px;
@@ -161,10 +192,17 @@
     bottom: 1px;
     display: block;
     
-    width: 127px;
     height: 1px;
 
     background-color: $accentColor;
+    @media screen and (max-width: 767px),
+    (min-width: 768px) {
+        width: 109px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 127px;
+    }
 }
 
 .check-label__input:checked+.check-label__icon {

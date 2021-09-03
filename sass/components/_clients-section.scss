@@ -5,9 +5,9 @@
         // gap: 30px;
         display: flex;
         flex-wrap: wrap;
+    }
 
-
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
@@ -15,8 +15,8 @@
 
     @media screen and (min-width: 1200px) {
         display: flex;
-        justify-content: center;
-        // gap: 30px; from tablet 768px
+        justify-content: center; 
+        
     }
 }
 
@@ -31,8 +31,8 @@
     transition: border $durationTimingFunction;
 
     @media screen and (max-width: 767px) {
-        max-width: 210px;
-        // height: 92px;
+        width: 210px;
+        height: 92px;
         margin-bottom: 30px;
     }
 
@@ -52,9 +52,24 @@
     }
 }
 
-.clients-box:nth-child(2n+1) {
-    margin-right: 30px;
+@media screen and(max-width: 768px)  {
+    .clients-box:nth-child(2n+1) {
+        margin-right: 30px;
+    }
 }
+
+@media screen and(min-width: 768px) {
+    .clients-box:nth-child(2n+1) {
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .clients-box:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+
 
 .clients-box__link {
     color: $iconsPrimaryColor;
@@ -88,5 +103,4 @@
     &:focus {
         color: $accentColor;
     }
-}
 }

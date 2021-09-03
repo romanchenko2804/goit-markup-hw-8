@@ -18,11 +18,23 @@
 }
 
 .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 528px;
-    height: 581px;
+    @media screen and (max-width: 767px),
+    (min-width: 768px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 450px;
+        height: 609px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 528px;
+        height: 581px;
+    }
+    
 
     background-color: $whiteColor;
     border-radius: 4px;

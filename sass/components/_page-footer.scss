@@ -182,11 +182,10 @@
 }
 
 .subscribe-form__input {
-    @media screen and (max-width: 767px),
-    (min-width: 768px) {
+    @media screen and (max-width: 767px), (min-width: 768px) {
         padding: 15px 16px;
         margin-bottom: 20px;
-        max-width: 450px;
+        width: 100%;
 
         font-size: 16px;
         line-height: 1.25;
@@ -201,6 +200,10 @@
         cursor: pointer;
 
         transition: border $durationTimingFunction;
+    }
+    
+    @media screen and (min-width: 768px) {
+        width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
