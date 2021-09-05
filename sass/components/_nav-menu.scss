@@ -1,19 +1,22 @@
 .mobile__nav-menu {
+    @media screen and (max-width: 767px) {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
     }
 
     @media screen and (min-width: 1200px) {
-        //    display: flex;
-        justify-content: space-between;
+        display: flex;
     }
 }
 
 .nav-menu {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 302px;
-    }
 
     @media screen and (min-width: 768px) {
         margin-right: 84px;
@@ -76,6 +79,11 @@
         line-height: 1.14;
         letter-spacing: 0.02em;
     }
+}
+
+.nav-menu__link:hover,
+.nav-menu__link:focus {
+    color: $accentColor;
 }
 
 .nav-menu__link::after {

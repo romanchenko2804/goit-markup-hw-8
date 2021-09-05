@@ -183,27 +183,28 @@
 .check-label__link {
     position: relative;
     color: $accentColor;
+    text-decoration: underline;
 }
 
-.check-label__link::before {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 1px;
-    display: block;
+// .check-label__link::before {
+//     content: '';
+//     position: absolute;
+//     right: 0;
+//     bottom: 1px;
+//     display: block;
     
-    height: 1px;
+//     height: 1px;
 
-    background-color: $accentColor;
-    @media screen and (max-width: 767px),
-    (min-width: 768px) {
-        width: 109px;
-    }
+//     background-color: $accentColor;
+//     @media screen and (max-width: 767px),
+//     (min-width: 768px) {
+//         width: 109px;
+//     }
 
-    @media screen and (min-width: 1200px) {
-        width: 127px;
-    }
-}
+//     @media screen and (min-width: 1200px) {
+//         width: 127px;
+//     }
+// }
 
 .check-label__input:checked+.check-label__icon {
     border-color: transparent;
@@ -218,6 +219,7 @@
 .modal-form__btn {
     display: block;
     padding: 10px 56px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
 

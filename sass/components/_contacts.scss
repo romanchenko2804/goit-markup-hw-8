@@ -22,9 +22,6 @@
         flex-direction: row;
         align-items: center;
         margin-left: 305px;
-
-        
-
     }
 
 }
@@ -49,10 +46,6 @@
 
 @media screen and (max-width: 767px) {
     .contact-social__lists {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        padding-left: 40px;
         padding-bottom: 48px;
     }
 
@@ -80,6 +73,7 @@
 
     .social-list {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .social-list__link::after {
