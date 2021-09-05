@@ -23,24 +23,24 @@
         // background-size: 480px 400px;
 
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/adaptive/hero-960.jpg)
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/adaptive/hero-960.jpg)
         }
     }
 
     @media screen and (min-width: 768px) {
-        max-width: 768px;
-        max-height: 400px;
+        // max-width: 768px;
+        // max-height: 400px;
         padding-top: 118px;
         padding-bottom: 118px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/adaptive/hero-768.jpg);
-        background-size: 768px 400px;
+        url(../images/adaptive/hero-768.jpg);
+        // background-size: 768px 400px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/adaptive/hero-1536.jpg)
+            url(../images/adaptive/hero-1536.jpg)
         }
     }
 
@@ -50,14 +50,14 @@
         padding-top: 200px;
         padding-bottom: 200px;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../../images/adaptive/hero-1600.jpg);
+        url(../images/adaptive/hero-1600.jpg);
         background-size: 1600px 600px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../../images/adaptive/hero-3200.jpg)
+            url(../images/adaptive/hero-3200.jpg)
         }
     }
 }
