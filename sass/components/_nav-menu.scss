@@ -41,7 +41,18 @@
 }
 
 .nav-menu__item {
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 479px) {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.175;
+        letter-spacing: 0.02em;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+    @media screen and (min-width: 480px) {
         font-weight: 500;
         font-size: 40px;
         line-height: 1.175;
@@ -51,10 +62,6 @@
             margin-bottom: 32px;
         }
     }
-
-    @media screen and (min-width: 768px) {}
-
-    @media screen and (min-width: 1200px) {}
 
 }
 

@@ -1,5 +1,17 @@
 .contacts {
-    @media screen and (max-width: 767px) {
+     @media screen and (max-width: 479px) {
+         display: flex;
+         flex-direction: column-reverse;
+         margin-bottom: 64px;
+
+         font-weight: 500;
+         font-size: 17px;
+         line-height: 1.18;
+
+         letter-spacing: 0.02em;
+     }
+
+    @media screen and (min-width: 480px) {
         display: flex;
         flex-direction: column-reverse;
         margin-bottom: 64px;
